@@ -1,0 +1,146 @@
+/* *{
+    margin: 0;
+    padding: 0;
+} */
+body::-webkit-scrollbar{
+    display: none;
+}
+body{
+    font-family: Verdana;
+    font-size: 13px;
+    min-height: 90vh;
+    background: linear-gradient(to right, rgb(56, 56, 255), rgb(140, 140, 255), rgb(140, 140, 255), rgb(140, 140, 255), rgb(56, 56, 255));
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.background {
+    display: flex;
+    position: fixed; z-index: -1;
+    height: 109%;
+    width: 100%;
+} 
+.map {
+    height: 170px;
+    margin-top: 9%;
+}
+.card-block{
+    width: 500px;
+    height: 600px;
+    background-color: rgb(235, 235, 235);
+    border-radius: 15px;
+    position: relative;
+    float: inherit;
+    text-align: center;
+}
+.card-block::after{
+    content: '';
+    position: absolute;
+    background-color: rgb(224, 224, 224);
+    inset: 0;
+    transform: rotate(-5deg);
+    opacity: 80%;
+    z-index: -1;
+}
+.text{
+    text-align: center;
+}
+.login-block{
+    text-align: start;
+    margin: 3em 4em 0 4em;
+}
+
+/*Digit your login and password part*/
+.email-block,
+.password-block{
+    text-align: center;
+    padding: 2px 0 2px 0;
+}
+
+input[type=text],
+input[type=password]{
+    background-color: rgb(235, 235, 235);
+    text-align: start;
+    font-size: 16px;
+    height: 24px;
+    width: 300px;
+    border: none;
+    border-bottom: 1px black solid;
+}
+input[type=text]:active{ 
+    border: none;
+    border-style: none;
+    outline: none;
+    border-bottom: 1px black solid;
+}
+input[type=password]:active{
+    border: none;
+    outline: none;
+    border-bottom: 1px black solid;
+}
+input[type=text]:focus{ 
+    border: none;
+    border-style: none;
+    outline: none;
+    border-bottom: 2px orangered solid;
+}
+input[type=password]:focus{
+    border: none;
+    outline: none;
+    border-bottom: 2px orangered solid;
+}
+
+/*Remember password and Forgot password part*/
+.Remember-Forgot-Password-Block{
+    padding: 15px 0 2px 0;
+    display: flex;
+    align-items: center;
+}
+.forgot-password{
+    color: rgb(0, 0, 196);
+    text-decoration: none;
+    display: flex;
+    margin: 0 0 0 94px;
+}
+.forgot-password:active{
+    color: rgb(243, 21, 21);
+}
+
+/*button part*/
+.buttom-submit-block{
+    padding: 20px 0 2px 0;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+.buttom {
+    background-color: rgb(247, 67, 36);
+    border: 1px solid rgb(247, 67, 36);
+    border-radius:4px;
+    display:inline-block;
+    cursor:pointer;
+    color: white;
+    font-weight:bold;
+    font-size:15px;
+    text-align: center;
+    text-decoration:none;
+    width: 300px;
+    height: 50px;
+}
+.buttom:active{
+    background-color: rgb(247, 104, 79);
+}
+
+/*Create account part*/
+.Create-account-block{
+    text-align: center;
+    padding: 30px 0 40px 0;
+}
+.create-account{
+    color: rgb(0, 0, 196);
+    text-decoration: none;
+}
+.create-account:active{
+    color: rgb(243, 21, 21);
+    text-decoration: none;
+}
